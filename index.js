@@ -6,11 +6,11 @@ const redirectButton2 = document.getElementById("redirectButton2");
 });
 
 redirectButton1.addEventListener("click", function() {
-    redirectToExternalSite("www.hillel.com")
+    redirectToExternalSite("https://odessa.ithillel.ua/courses/programming")
 });
 
 redirectButton2.addEventListener("click", function() {
-    redirectToExternalSite("www.hillel.com", true);
+    redirectToExternalSite("https://odessa.ithillel.ua/courses/front-end-pro-2", true);
 });
 function redirectToExternalSite(url, secure = false) {
     if (!/^https?:\/\//i.test(url)) {
